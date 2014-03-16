@@ -72,6 +72,7 @@ public class ActorResourceGetNotEmptyTest {
 
 	}
 	
+	// "GET /webapi/actors/" must return Actors
 	@Test
 	public void testActors_GET_actorsExist() throws Exception {
 		HttpHelper httpHelper = new HttpHelper("127.0.0.1", 8090);
@@ -88,6 +89,7 @@ public class ActorResourceGetNotEmptyTest {
 		verify(actorService).getActors();
 	}
 	
+	// "GET /webapi/actors/" must return Actors with correct data
 	@Test
 	public void testActors_GET_correctActors() throws Exception {
 		HttpHelper httpHelper = new HttpHelper("127.0.0.1", 8090);

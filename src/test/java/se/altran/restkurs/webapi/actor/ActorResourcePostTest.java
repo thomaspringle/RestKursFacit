@@ -45,6 +45,7 @@ public class ActorResourcePostTest {
 		server = AltranREST.startServer(8090, testModule);
 	}
 	
+	// "POST /webapi/actors" must return Response with Status code 201.
 	@Test
 	public void testActors_POST_ReturnCreatedStatus() throws Exception {
 		
@@ -67,6 +68,8 @@ public class ActorResourcePostTest {
 		verify(actorService).createActor(any(ActorBean.class));
 	}
 
+	// "POST /webapi/actors" must return Response with Location header set to the created Actor. 
+	// "Location: /webapi/actors/{new id}"
 	@Test
 	public void testMovies_POST_ReturnLocationToNewMovie() throws Exception {
 		
@@ -89,6 +92,7 @@ public class ActorResourcePostTest {
 		verify(actorService).createActor(any(ActorBean.class));
 	}
 	
+	// POSTing incorrect json data must return a Response with Status code 400
 	@Test
 	public void testMovies_POST_ReturnErrorStatus() throws Exception {
 		

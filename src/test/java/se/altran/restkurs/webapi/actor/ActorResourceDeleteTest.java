@@ -43,10 +43,11 @@ public class ActorResourceDeleteTest {
 		server = AltranREST.startServer(8090, testModule);
 	}
 	
+	// Asserts that when an Actor has been created successfully the Status code on the Reponse is 200.
 	@Test
-	public void testActors_POST_ReturnCreatedStatus() throws Exception {
+	public void testActors_DELETE_ReturnCreatedStatus() throws Exception {
 		
-		// Create POST command to /webapi/actors
+		// Create DELETE command to /webapi/actors
 		HttpHelper httpHelper = new HttpHelper("127.0.0.1", 8090);
 		HttpDelete httpDelete = new HttpDelete("/webapi/actors");
 		httpDelete.setHeader("Accept", "application/json");
@@ -62,10 +63,11 @@ public class ActorResourceDeleteTest {
 		verify(actorService).deleteActors(userToken);
 	}
 
+	// Asserts that when the user is not Authorized to delete the Actors, the Status code on the Reponse is 401.
 	@Test
-	public void testActors_POST_ReturnUnAuthorized() throws Exception {
+	public void testActors_DELETE_ReturnUnAuthorized() throws Exception {
 		
-		// Create POST command to /webapi/actors
+		// Create DELETE command to /webapi/actors
 		HttpHelper httpHelper = new HttpHelper("127.0.0.1", 8090);
 		HttpDelete httpDelete = new HttpDelete("/webapi/actors");
 		httpDelete.setHeader("Accept", "application/json");

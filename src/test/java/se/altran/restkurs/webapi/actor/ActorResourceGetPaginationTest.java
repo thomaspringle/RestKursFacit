@@ -58,7 +58,7 @@ public class ActorResourceGetPaginationTest {
 
 	}
 
-		
+	// "GET /actors?offset=10&limit=5" must return 5 Actors	
 	@Test
 	public void testActors_GET_filteredActors() throws Exception {
 		HttpHelper httpHelper = new HttpHelper("127.0.0.1", 8090);

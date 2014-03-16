@@ -63,6 +63,7 @@ public class ActorResourceGetSpecificTest {
 
 	}
 	
+	// "GET /webapi/actors/+uuidPeterHaber" must return the Actor Peter Haber
 	@Test
 	public void testActors_GET_specificActorsExist() throws Exception {
 		HttpHelper httpHelper = new HttpHelper("127.0.0.1", 8090);
