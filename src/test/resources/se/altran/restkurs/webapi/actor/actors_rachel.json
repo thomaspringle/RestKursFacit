@@ -1,0 +1,20 @@
+[
+    {
+        "firstName": "Rachel",
+        "lastName": "McAdams",
+        "movies": [
+            "weddingcrashers",
+            "thefamilystone",
+            "stateofplay"
+        ]
+    },
+    {
+        "firstName": "Rachel",
+        "lastName": "Weisz",
+        "movies": [
+            "themummy",
+            "themummyreturns",
+            "thefountain"
+        ]
+    }
+]

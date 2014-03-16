@@ -1,0 +1,50 @@
+[
+    {
+        "firstName": "Brad",
+        "lastName": "Pitt",
+        "movies": [
+            "fightclub",
+            "snatch",
+            "themexican",
+            "oceanstwelve",
+            "troy",
+            "babel"
+        ]
+    },
+    {
+        "firstName": "Cate",
+        "lastName": "Blanchett",
+        "movies": [
+            "parklands",
+            "elizabeth",
+            "babel"
+        ]
+    },
+    {
+        "firstName": "Russell",
+        "lastName": "Crowe",
+        "movies": [
+            "laconfidential",
+            "gladiator",
+            "stateofplay"
+        ]
+    },
+    {
+        "firstName": "Helen",
+        "lastName": "Mirren",
+        "movies": [
+            "theclearing",
+            "thequeen",
+            "stateofplay"
+        ]
+    },
+    {
+        "firstName": "Ben",
+        "lastName": "Affleck",
+        "movies": [
+            "chasingamy",
+            "dogma",
+            "stateofplay"
+        ]
+    }
+]
